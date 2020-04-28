@@ -2,7 +2,7 @@
 <html lang="en">
 <?php 
         $id = $_GET['id'];
-        $link = mysqli_connect("nb9507.neu.edu", "3150sharma", "hs6051", "3150sharma");
+        $link = mysqli_connect("localhost", "root", "root", "movie");
 
         $movieQuery = "SELECT * FROM movieTable WHERE movieID = $id"; 
         $movieImageById = mysqli_query($link,$movieQuery);
