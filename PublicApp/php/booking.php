@@ -1,10 +1,10 @@
 <?php
 if(isset($_POST['submit']))
 {
-        $servername = "nb9507.neu.edu";
-        $username = "3150sharma";
-        $password = "hs6051";
-        $dbName="3150sharma";
+        $servername = "localhost";
+        $username = "root";
+        $password = "root";
+        $dbName="moviedb";
         $link = new mysqli($servername, $username, $password, $dbName);
         $sql = "INSERT INTO bookingTable (  movieName,
                                             bookingTheatre,
